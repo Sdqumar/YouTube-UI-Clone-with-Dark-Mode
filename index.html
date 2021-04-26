@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>YouTube</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+	<link rel="stylesheet" id="theme" href="main.css">	
+</head>
+
+<body>
+	<div class="container">
+		<nav> 
+			<i class="fas fa-home"><small>Home</small></i> 
+			<i class="fab fa-hotjar"><small>Trending</small></i>
+			<i class="fab fas fa-photo-video"><small>Subcriptions</small></i>
+			<i class="fas fa-icons"><small>Library</small></i> 
+			<i class="fas fa-history"><small>History</small></i>
+			<br>	
+			<i class="fas fa-moon" onclick="darkMode('main.css')"><small>DarkMode</small></i>
+		</nav>
+		<aside id="aside"> 
+			<div>
+				<i class="fas fa-bars" onclick="asideClose()"></i>
+				<small>
+				<i class="fab fa-youtube"></i>YouTube<sup>NG</sup>
+				</small>
+			</div>
+
+			 	
+			<div class="aside-home">
+				<small><i class="fas fa-home"></i>Home</small>
+				<small><i class="fab fa-hotjar"></i>Trending</small>
+				<small><i class="fas fa-photo-video"></i>Subcriptions</small>
+				
+				<small><i class="fas fa-icons"></i>Library</small> 
+				<small><i class="fas fa-history"></i>History</small>
+				
+
+			</div>
+			
+			<div class="aside-content">
+				Sign in to like videos,<br>
+				comment, and subcribe.
+				<button><i class="fas fa-user-circle"></i> SIGN IN</button>
+			</div>
+
+		</aside>
+		<span class="onClicksearch" id="search">
+				<i class="fas fa-long-arrow-alt-left" onclick="searchClose()"></i>
+				<input type="text" name="text" placeholder="Search"> 
+				<span class="search"><i class="fas fa-search" ></i></span></span>
+			<span>
+		<header>
+			<i class="fas fa-bars" onclick="asideOpen()"></i>
+			<small>
+				<i class="fab fa-youtube"></i>YouTube<sup>NG</sup></small> 
+			<span>
+				<input type="text" name="text" placeholder="Search" > 
+				<span class="search"><i class="fas fa-search" onclick="searchOpen()"></i></span></span>
+			<span>
+			<i class="fas fa-th"></i> 
+			<i class="fas fa-ellipsis-v"></i>
+		</span> 
+			<button><i class="fas fa-user-circle"></i> SIGN IN</button>
+		</header>
+		<main>
+			<div class="grid">
+				<img src="./img/thumb9.jpg"/>
+				<div class="grid-content">
+					<div class="grid-img">
+						<img src="./img/ut9.jpg"/>
+					</div>
+					<div class="grid-text">
+						<h6>The Kissing Boot 3 Exclusive Sneak Peek</h6> 
+						<small> Netflix </i></small>
+						<small>12M Views . 1 weeks ago<</small>
+					</div>
+						<i class="fas fa-ellipsis-v"></i>
+					<span>4:04</span>
+				</div>
+			</div>
+			<div class="grid">
+				<img src="./img/thumb12.jpg"/>
+				<div class="grid-content">
+					<div class="grid-img">
+						<img src="./img/ut12.jpg"/>
+					</div>
+					<div class="grid-text">
+						<h6>The Benefits of Becoming Web Developer</h6> 
+						<small> Traversy Media  </i></small>
+						<small>1M Views . 3 weeks ago</small>
+					</div>
+						<i class="fas fa-ellipsis-v"></i>
+					<span>20:00</span>
+				</div>
+			</div>
+			<div class="grid">
+				<img src="./img/thumb13.jpg"/>
+				<div class="grid-content">
+					<div class="grid-img">
+						<img src="./img/ut13.jpg"/>
+					</div>
+					<div class="grid-text">
+						<h6>10 Single Line CSS Layout</h6> 
+						<small> Chrome Dev </i></small>
+						<small>3.3M Views . 1 month ago</small>
+					</div>
+						<i class="fas fa-ellipsis-v"></i>
+					<span>8:04</span>
+				</div>
+			</div>
+			<div class="grid">
+				<img src="./img/thumb6.jpg"/>
+				<div class="grid-content">
+					<div class="grid-img">
+						<img src="./img/ut6.jpg"/>
+					</div>
+					<div class="grid-text">
+						<h6>iOS 14 Hands-On: Everything New!</h6> 
+						<small> Marques Brownlee </i></small>
+						<small>7.2M Views . 1 month ago</small>
+					</div>
+						<i class="fas fa-ellipsis-v"></i>
+					<span>12:10</span>
+				</div>
+			</div>
+			<div class="grid">
+				<img src="./img/thumb7.jpg"/>
+				<div class="grid-content">
+					<div class="grid-img">
+						<img src="./img/ut7.jpg"/>
+					</div>
+					<div class="grid-text">
+						<h6>Chris Brown - Go Crazy ft. Young Thug</h6> 
+						<small> Chris Brown </i></small>
+						<small>7M Views . 2 months ago</small>
+					</div>
+						<i class="fas fa-ellipsis-v"></i>
+					<span>8:04</span>
+				</div>
+			</div>
+			<div class="grid">
+				<img src="./img/thumb8.jpg"/>
+				<div class="grid-content">
+					<div class="grid-img">
+						<img src="./img/ut8.jpg"/>
+					</div>
+					<div class="grid-text">
+						<h6>Automate Spotify With Python</h6> 
+						<small> The Come Up</i></small>
+						<small>683k Views . 6 months ago</small>
+					</div>
+						<i class="fas fa-ellipsis-v"></i>
+					<span>12:10</span>
+				</div>
+			</div>
+
+			<div class="grid">
+				<img src="./img/thumb10.jpg"/>
+				<div class="grid-content">
+					<div class="grid-img">
+						<img src="./img/ut10.jpg"/>
+					</div>
+					<div class="grid-text">
+						<h6>THE BATMAN (2021) Teaser Trailer</h6> 
+						<small>Click Play </i></small>
+						<small>3M Views . 1 weeks ago</small>
+					</div>
+						<i class="fas fa-ellipsis-v"></i>
+					<span>4:04</span>
+				</div>
+			</div>
+
+
+			<div class="grid">
+				<img src="./img/thumb11.jpg"/>
+				<div class="grid-content">
+					<div class="grid-img">
+						<img src="./img/ut11.jpg"/>
+					</div>
+					<div class="grid-text">
+						<h6>Nokia Could Shock The World</h6> 
+						<small> The Vedge </i></small>
+						<small>2M Views . 1 month ago</small>
+					</div>
+						<i class="fas fa-ellipsis-v"></i>
+					<span>10:09</span>
+				</div>
+			</div>
+
+
+			<div class="grid">
+				<img src="./img/thumb14.jpg"/>
+				<div class="grid-content">
+					<div class="grid-img">
+						<img src="./img/ut14.jpg"/>
+					</div>
+					<div class="grid-text">
+						<h6>Rema - Woman (Music Video)</h6> 
+						<small> Rema </i></small>
+						<small>233k Views . 6 days ago</small>
+					</div>
+						<i class="fas fa-ellipsis-v"></i>
+					<span>4:04</span>
+				</div>
+			</div>
+
+
+
+			<div class="grid">
+				<img src="./img/thumb15.jpg"/>
+				<div class="grid-content">
+					<div class="grid-img">
+						<img src="./img/ut15.jpg"/>
+					</div>
+					<div class="grid-text">
+						<h6>Fireboy DML - Scatter - SayRah class choreography</h6> 
+						<small> Fireboy </i></small>
+						<small>765k Views . 2 months ago</small>
+					</div>
+						<i class="fas fa-ellipsis-v"></i>
+					<span>6:04</span>
+				</div>
+			</div>
+
+
+
+			<div class="grid">
+				<img src="./img/thumb16.jpg"/>
+				<div class="grid-content">
+					<div class="grid-img">
+						<img src="./img/ut16.jpg"/>
+					</div>
+					<div class="grid-text">
+						<h6>Map of Computer Science</h6> 
+						<small> The Come Up </i></small>
+						<small>2.7M Views . 8 months ago</small>
+					</div>
+						<i class="fas fa-ellipsis-v"></i>
+					<span>12:08</span>
+				</div>
+			</div>
+
+
+
+			<div class="grid">
+				<img src="./img/thumb5.jpg"/>
+				<div class="grid-content">
+					<div class="grid-img">
+						<img src="./img/ut5.jpg"/>
+					</div>
+					<div class="grid-text">
+						<h6>The Last of Us Part 2: The Seraphites</h6> 
+						<small> The Lazy Gamer </i></small>
+						<small>3.5M Views . 1 month ago</small>
+					</div>
+						<i class="fas fa-ellipsis-v"></i>
+					<span>8:04</span>
+				</div>
+			</div>
+
+
+
+		</main>	
+	</div>
+
+	<script>
+		var element= document.getElementById('search');
+		var element2= document.getElementById('aside');
+		var element3= document.getElementById('theme');
+	function searchOpen() {
+		element.style.display = 'flex'
+	}
+	function searchClose(){
+		element.style.display = 'none'
+	}
+	function asideOpen() {
+		element2.style.display = 'flex'
+	}
+	function asideClose(){
+		element2.style.display = 'none'
+	}
+	function darkMode(){
+			if (element3.getAttribute("href")=='main.css') {
+				element3.href = 'maindark.css'
+			} 
+				else {
+				element3.href = 'main.css'
+				}
+		}
+	</script>
+</body>
+</html>

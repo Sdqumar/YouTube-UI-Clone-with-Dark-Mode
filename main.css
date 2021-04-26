@@ -1,0 +1,384 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	
+}
+body {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1.2rem;
+
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(./assets/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Anton";
+  src: url(./assets/Anton-Regular.ttf);
+}
+i{
+	color: grey;
+	margin: 0 0.5rem;
+}
+aside{
+		display: none;
+		flex-direction: column;
+		height: 100vh;
+		width: 14rem;
+		z-index: 20;
+		position: fixed;
+		background: #fff;
+		left: 0;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+0.19) 
+	}
+	aside  div{
+	font-size: 1.2rem;
+	padding-top: 0.5rem;
+	margin-bottom: 1.5rem;
+	padding-left: 1rem;
+	border-top: 1px solid rgba(192,192,192,0.4);
+	display: flex;
+	flex-direction: column;
+	}
+	aside small{
+		padding: 0.5rem;
+		font-weight: 200;
+		font-size: 15px;
+		font-family: roboto;	
+		color: #000;
+		cursor: pointer;
+	}
+	aside  div:nth-child(1) small i {
+		color: red;
+		font-size: 1.5rem;
+		margin-right: 1px;
+		cursor: pointer;
+
+	}
+	
+	aside  div:nth-child(1) small {
+		font-size: 1.1rem;
+		font-weight:800;
+		display: flex;
+	}
+	
+aside  div:nth-child(1){
+	align-items: center;
+	margin-bottom: 0.5rem;
+	flex-direction: row;
+	cursor: pointer;
+
+}
+.aside-home{
+	padding:0;
+	margin: 0;
+}
+.aside-home small i{
+	padding-right:  0.7rem
+}
+
+.aside-home small{
+	width: 100%;
+	padding: 0.9rem;
+	font-size: 1rem;
+	font-weight: 500;
+}
+ .aside-home small:nth-child(1){
+    background: rgba(192,192,192,0.4);
+	}
+.aside-home small:nth-child(1) i{
+	color: red;
+}
+.aside-home small:nth-child(4){
+	border-top: 1px solid rgba(192,192,192,0.4);
+}
+.aside-home small:nth-child(5){
+	border-bottom: 1px solid rgba(192,192,192,0.4);
+}
+.aside-content{
+	font-size: 1rem;
+	margin-left: 0.5rem;
+	padding-bottom: 1.5rem;
+	border-bottom: 1px solid rgba(192,192,192,0.4);
+}
+.aside-content button{
+	margin-top: 0.8rem
+}	
+nav{
+	display: none;
+	z-index: 10;
+	padding-top: 2rem;
+}
+
+
+.container{
+	display: grid;
+	grid-template-areas: "header" "main";
+	grid-template-rows: 4rem auto;
+	margin-top: 0;
+}
+
+header{
+	grid-area: header;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    background: #fff;
+    z-index: 5;
+    height: 8vh;
+    padding:0 1rem;
+}
+header small{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	color: rgb(41, 40, 40);
+    font-family: "Anton";
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+header input{
+	display: none;
+}
+
+header small i{
+	color: red;
+	margin-right: 3px;
+	cursor: pointer;
+
+}
+header small sup{
+	font-size: 0.5rem;
+	font-family: Roboto, Arial;
+	margin-bottom: 0.8rem;
+}
+header span:nth-of-type(2){
+	width:5rem;
+}
+
+button{
+	border: 1.5px solid #065fd4;
+	color: #065fd4;
+	padding: 5px 10px;
+	background: #fff;
+	text-align: center;
+	display: flex;
+	align-items:  center;
+	font-weight: 600;
+	justify-content: center;
+	cursor: pointer;
+	width: 7rem;
+	margin-right: 1rem;
+}
+button:hover{
+	background: #065fd4;
+	color: #fff;
+}
+button:hover i{
+	color: #fff;
+}
+ button i{
+	color: #065fd4;
+	font-size: 1.5rem;
+	margin-left:1px; 
+
+}
+
+
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	top:50px;
+	justify-content: center;
+
+}
+main .grid{
+	max-width: 320px;
+    height: 10rem;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 6rem;
+    margin-top: 1rem;
+    margin-right: 1.2rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+main .grid span{
+	position: absolute;
+	right: 2px;
+	bottom: 5px;
+	color: #fff;
+	z-index: 3;
+	background-color: black;
+}
+.grid img{
+	width: 100%;
+	height: inherit;
+}
+.grid-content{
+	display: flex;
+	margin-top: 0.7rem;
+}
+.grid-img{
+	display: inline;
+	max-width: 40px;
+	margin-right: 1rem;
+}
+.grid-img img{
+	width: 100%;
+	border-radius:100%;
+
+}
+.grid-text{
+	display: flex;
+	flex-direction: column;
+}
+.grid-text i{
+	font-size: 1.1rem;
+	padding-top: 2px;
+}
+.grid-text h6{
+	font-size:0.9rem;
+}
+
+.grid-text small:nth-of-type(1){
+	margin-top: 0.5rem;
+
+} 
+/* OnClick Search*/ 
+.onClicksearch{ 
+	width: 99vw; 
+	display: flex; 
+	align-items:center; 
+	font-size:20px;
+	padding-left: 1rem;
+	position: fixed;
+	top:0;
+	z-index: 20;
+	height: 10vh;
+	background: #fff;
+	display: none;
+	} 
+.onClicksearch input{
+	width: 70vw; 
+	height: 30px; 
+	border: 1px solid blue; 
+	border-radius: 7px; 
+	margin:0.5rem; 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+0.19) 
+
+}
+
+.onClicksearch .search i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid blue; 
+	border-radius: 7px; 
+	margin:0.5rem; 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,
+0.19) 
+	width: 1000px;
+	height: 30px;
+	}
+
+/*large Screen*/
+@media only screen and (min-width: 700px){
+	header input{
+		display: block;
+		width: 40vw;
+		padding: 0.4rem;
+		border-radius: 8px
+		border:2px solid silver;
+		cursor: pointer;
+	}
+	header small{
+		flex-grow: 1;
+		padding-right: 1rem;
+	}
+	header span:nth-of-type(1){
+		display: flex;
+		flex: 4;
+		margin-right: 1rem;
+		cursor: pointer;
+		justify-content: center;
+	}
+	header span:nth-of-type(1) input{
+		max-width: 50vw; 
+	}
+	header .search{
+		max-width: 4vw;
+		display: flex;
+		justify-content: center;
+		background:rgba(192,192,192,0.1);
+		padding: 0.5rem;
+		margin-left: -1px;
+		border: 1px solid silver;
+		width: 100px;
+		cursor: pointer;
+		font-weight: lighter;
+	}
+
+	nav{
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		top: 40px;
+		left: 0px;
+		margin-left: 0;
+		height: 100vh;
+		width: 4rem;
+		z-index: 2;
+	}
+	nav small{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		padding: 0.5rem;
+		font-weight: 100;
+		font-size: 11px;
+		font-family: roboto;
+
+	}
+	nav i:nth-child(1) {
+		color: red
+	}
+
+	nav i:nth-child(3) small{
+		padding-left: 1rem;
+	}
+	nav i{
+		padding: 0.7rem 0.1rem;
+		width: 3rem;
+		padding-left: 0;
+		text-align: center;
+		display: flex;
+		flex-direction: column; 
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+	}
+	main{
+		margin-left:  rem;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 96%;
+		margin-left: 4rem;
+	}
+	main .grid{
+	max-width: 17rem;
+	}
+	
+}
+
+
